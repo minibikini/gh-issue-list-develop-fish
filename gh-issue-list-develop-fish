@@ -1,3 +1,5 @@
+#!/usr/bin/env fish
+
 # gh-issue-list-develop-fish
 #
 # A GitHub CLI extension for interactive issue selection
@@ -41,6 +43,14 @@
 #   - Must be run from within a GitHub repository
 #   - Requires appropriate GitHub permissions
 #   - Branch name is automatically generated based on the issue title
+
+# Dependency check
+for cmd in gh tput fzf
+    if not type -q $cmd
+        echo "Error: '$cmd' is required but not installed."
+        return 1
+    end
+end
 
 function gh-issue-list-develop-fish --description "Quick branch creation from GitHub issues"
     # Get terminal width
@@ -112,3 +122,5 @@ function gh-issue-list-develop-fish --description "Quick branch creation from Gi
         end
     end
 end
+
+gh-issue-list-develop-fish
