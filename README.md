@@ -27,6 +27,14 @@ Then simply use: `gh ild`
 - [`gh`](https://cli.github.com/) - GitHub CLI
 - [`fzf`](https://github.com/junegunn/fzf) - a command-line fuzzy finder
 
+## Installation
+
+To install this extension, simply run:
+
+```fish
+gh extension install minibikini/gh-issue-list-develop-fish
+```
+
 ## Workflow
 
 1. Lists all open issues from the current repository
