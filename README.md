@@ -38,3 +38,7 @@ Then simply use: `gh ild`
 - Must be run from within a GitHub repository
 - Requires appropriate GitHub permissions
 - Branch name is automatically generated based on the issue title
+
+## Similar Projects
+
+- [`gh-workon`](https://github.com/chmouel/gh-workon/) (Bash)
